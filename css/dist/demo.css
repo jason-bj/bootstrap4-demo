@@ -1,0 +1,163 @@
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.dash {
+  min-height: 100vh;
+}
+
+.nav-bar {
+  background: #181F2C;
+  min-width: 238px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  overflow: auto;
+}
+
+.nav-bar a {
+  color: white;
+}
+
+.nav-bar header {
+  min-height: 84px;
+  padding: 8px 27px;
+}
+
+.nav-bar header a {
+  margin-right: auto;
+}
+
+.nav-item {
+  min-height: 56px;
+  padding: 8px 20px 8px 70px;
+}
+
+.nav-item i {
+  width: 36px;
+  font-size: 19px;
+  margin-left: -40px;
+}
+
+.nav-item:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.nav-body {
+  margin-left: 238px;
+}
+
+.toolbar {
+  background: #f3f3f3;
+  min-height: 84px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 238px;
+  z-index: 1000;
+}
+
+.content {
+  margin-top: 84px;
+  background-color: #e9edf4;
+  padding: 25px;
+}
+
+.tools a {
+  color: #515151;
+  display: flex;
+  align-items: center;
+}
+
+.tool-item, search-button {
+  width: 42px;
+  height: 42px;
+}
+
+.tool-item i, search-button i {
+  font-size: 20px;
+}
+
+.logo {
+  margin-right: 10px;
+}
+
+.search-input {
+  margin-right: 15px;
+  margin-left: 15px;
+  border: none;
+  height: 50px;
+  padding: 8px 8px 11px 4px;
+  width: 100px;
+}
+
+.search-input::placeholder {
+  color: #8b8b8b;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.search-button {
+  border: none;
+  background: none;
+}
+
+.stats-card {
+  min-height: 170px;
+  padding: 18px 23px;
+  box-shadow: 0 5px rgba(0, 0, 0, 0.25);
+}
+
+.stats-number {
+  font-size: 33px;
+}
+
+.stats-icon {
+  font-size: 20px;
+}
+
+.dash-row {
+  margin-bottom: 30px;
+}
+
+.dash-card {
+  max-width: 95%;
+}
+
+.card-icon {
+  margin-right: 30px;
+}
+
+.card-header {
+  min-height: 57px;
+  background: #f0f1f7;
+}
+
+.notification-icon {
+  width: 35px;
+}
+
+a.notification {
+  color: #515151;
+  padding: 10px 5px;
+}
+
+a.notification:hover {
+  color: #515151;
+  background-color: #F0F1F7;
+}
+
+.notification-time {
+  margin-left: auto;
+}
+
+.dash-row {
+  margin-bottom: 30px;
+}

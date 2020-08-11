@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/dist/demo.min.css">
+</head>
+
+<body>
+  <div class="dash d-flex">
+    <!-- right part of body nav bar -->
+    <div class="nav-bar d-flex flex-column">
+      <!-- logo -->
+      <header class="d-flex align-items-center">
+        <a class="d-flex align-items-center" href="index.html">
+          <i class="fa fa-fire logo" aria-hidden="true"></i>
+          <span>Dashboard</span>
+        </a>
+      </header>
+      <!-- link groups -->
+      <nav class="d-flex flex-column">
+        <a href="table.html" class="nav-item"><i class="fa fa-table" aria-hidden="true"></i>Table</a>
+        <a href="form.html" class="nav-item"><i class="fa fa-wpforms" aria-hidden="true"></i>Form</a>
+        <a href="button.html" class="nav-item"><i class="fa fa-square-o" aria-hidden="true"></i>Button</a>
+        <a href="card.html" class="nav-item"><i class="fa fa-address-card-o" aria-hidden="true"></i>Card</a>
+        <a href="media.html" class="nav-item"><i class="fa fa-comment-o" aria-hidden="true"></i>Comment</a>
+        <a href="notification.html" class="nav-item"><i class="fa fa-bell-o" aria-hidden="true"></i>Notification</a>
+        <a href="tooltip.html" class="nav-item"><i class="fa fa-gittip" aria-hidden="true"></i>Tooltip</a>
+        <a href="progress.html" class="nav-item"><i class="fa fa-circle-o-notch" aria-hidden="true"></i>Progress</a>
+        <a href="chart.html" class="nav-item"><i class="fa fa-line-chart" aria-hidden="true"></i>Charts</a>
+        <a href="code.html" class="nav-item"><i class="fa fa-code" aria-hidden="true"></i>Useful Code</a>
+      </nav>
+    </div>
+
+    <!-- left part of body the body of dashboard -->
+    <div class="nav-body d-flex flex-grow-1">
+      <div class="toolbar d-flex align-items-center justify-content-between">
+        <!--search box-->
+        <form action="search.html" method="post" class="d-flex align-items-center flex-grow-1">
+          <button type="submit" class="search-button"><i class="fa fa-search" aria-hidden="true"></i></button>
+          <input type="text" class="search-input flex-grow-1" name="search_input" placeholder="Search">
+        </form>
+
+        <!--toolbar icons-->
+        <div class="tools d-flex align-items-center">
+          <a href="#" class="tool-item"><i class="fa fa-github" aria-hidden="true"></i></a>
+          <a href="#" class="tool-item">
+            <i class="fa fa-bell" aria-hidden="true"></i>
+            <span class="badge badge-pill badge-danger align-self-start">6</span>
+          </a>
+          <a href="#" class="tool-item"><i class="fa fa-user-circle" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <main class="content flex-grow-1">
+        <!--draw content for each page-->
+        <div class="container-fluid">
+          <div class="media border p-3 mb-3">
+            <img src="https://www.w3schools.com/bootstrap4/img_avatar3.png" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+            <div class="media-body">
+              <h4>John Doe <small><i>Posted on February 19, 2016</i></small></h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nisi explicabo rem architecto, aperiam, asperiores tempora numquam voluptate facere atque ratione doloremque! Molestias, deserunt? Magni quas velit aliquid incidunt doloribus.</p>
+              <div class="media p-3">
+                <img src="https://www.w3schools.com/bootstrap4/img_avatar4.png" alt="Jane Doe" class="mr-3 mt-3 rounded-circle" style="width:45px;">
+                <div class="media-body">
+                  <h4>Jane Doe <small><i>Posted on February 20 2016</i></small></h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum voluptatum aut facere libero voluptate hic maxime qui voluptas consequuntur rem sunt voluptatibus sapiente, veniam commodi deleniti eveniet ipsa at soluta?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul class="list-unstyled">
+            <li class="media border p-3 mb-3">
+              <a class="d-flex" href="#">
+                <img src="https://www.w3schools.com/bootstrap4/img_avatar2.png" alt="" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+              </a>
+              <div class="media-body">
+                <h5>Media heading</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus vitae blanditiis unde tenetur dolorum. Soluta a repellendus nisi, iusto quasi officia in ea ratione illum, numquam rerum, ipsa fugit deleniti.</p>
+              </div>
+            </li>
+            <li class="media border p-3 mb-3">
+              <a class="d-flex" href="#">
+                <img src="https://www.w3schools.com/bootstrap4/img_avatar1.png" alt="" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+              </a>
+              <div class="media-body">
+                <h5>Media heading</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam eligendi esse aliquid voluptates molestiae, itaque tempore illum quis? Commodi possimus dolore placeat ipsa vel fuga aperiam quod explicabo, consequuntur maxime.</p>
+              </div>
+            </li>
+            </ul>
+        </div>
+      </main>
+    </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

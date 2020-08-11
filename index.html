@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/dist/demo.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+
+<body>
+  <div class="dash d-flex">
+    <!-- right part of body nav bar -->
+    <div class="nav-bar d-flex flex-column">
+      <!-- logo -->
+      <header class="d-flex align-items-center">
+        <a class="d-flex align-items-center" href="index.html">
+          <i class="fa fa-fire logo" aria-hidden="true"></i>
+          <span>Dashboard</span>
+        </a>
+      </header>
+      <!-- link groups -->
+      <nav class="d-flex flex-column">
+        <a href="table.html" class="nav-item"><i class="fa fa-table" aria-hidden="true"></i>Table</a>
+        <a href="form.html" class="nav-item"><i class="fa fa-wpforms" aria-hidden="true"></i>Form</a>
+        <a href="button.html" class="nav-item"><i class="fa fa-square-o" aria-hidden="true"></i>Button</a>
+        <a href="card.html" class="nav-item"><i class="fa fa-address-card-o" aria-hidden="true"></i>Card</a>
+        <a href="media.html" class="nav-item"><i class="fa fa-comment-o" aria-hidden="true"></i>Comment</a>
+        <a href="notification.html" class="nav-item"><i class="fa fa-bell-o" aria-hidden="true"></i>Notification</a>
+        <a href="tooltip.html" class="nav-item"><i class="fa fa-gittip" aria-hidden="true"></i>Tooltip</a>
+        <a href="progress.html" class="nav-item"><i class="fa fa-circle-o-notch" aria-hidden="true"></i>Progress</a>
+        <a href="chart.html" class="nav-item"><i class="fa fa-line-chart" aria-hidden="true"></i>Charts</a>
+        <a href="code.html" class="nav-item"><i class="fa fa-code" aria-hidden="true"></i>Useful Code</a>
+      </nav>
+    </div>
+
+    <!-- left part of body the body of dashboard -->
+    <div class="nav-body d-flex flex-grow-1">
+      <div class="toolbar d-flex align-items-center justify-content-between">
+        <!--search box-->
+        <form action="search.html" method="post" class="d-flex align-items-center flex-grow-1">
+          <button type="submit" class="search-button"><i class="fa fa-search" aria-hidden="true"></i></button>
+          <input type="text" class="search-input flex-grow-1" name="search_input" placeholder="Search">
+        </form>
+
+        <!--toolbar icons-->
+        <div class="tools d-flex align-items-center">
+          <a href="#" class="tool-item"><i class="fa fa-github" aria-hidden="true"></i></a>
+          <a href="#" class="tool-item">
+            <i class="fa fa-bell" aria-hidden="true"></i>
+            <span class="badge badge-pill badge-danger align-self-start">6</span>
+          </a>
+          <a href="#" class="tool-item"><i class="fa fa-user-circle" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <main class="content flex-grow-1">
+        <!--draw content for each page-->
+        <div class="container-fluid">
+          <div class="row dash-row">
+            <div class="col-4">
+              <div class="d-flex flex-column justify-content-between stats-card bg-primary text-white rounded">
+                <h3>Sign ups</h3>
+                <div class="d-flex stats-content justify-content-between">
+                  <div class="stats-icon d-flex align-items-end">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                  </div>
+                  <div class="d-flex flex-column align-items-end">
+                    <div class="stats-number">114</div>
+                    +25% from last month
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="d-flex flex-column justify-content-between stats-card bg-success text-white rounded">
+                <h3>Revenue</h3>
+                <div class="d-flex stats-content justify-content-between">
+                  <div class="stats-icon d-flex align-items-end">
+                    <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                  </div>
+                  <div class="d-flex flex-column align-items-end">
+                    <div class="stats-number">$26666</div>
+                    +20% from last month
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="d-flex flex-column justify-content-between stats-card bg-danger text-white rounded">
+                <h3>Open tickets</h3>
+                <div class="d-flex stats-content justify-content-between">
+                  <div class="stats-icon d-flex align-items-end">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                  </div>
+                  <div class="d-flex flex-column align-items-end">
+                    <div class="stats-number">8</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row dash-row">
+            <div class="col-6">
+              <div class="card dash-card">
+                <div class="card-header d-flex align-items-center">
+                  <div class="card-icon"><i class="fa fa-bar-chart" aria-hidden="true"></i></div>
+                  <h4 class="card-title">Bar Chart</h4>
+                </div>
+                <div class="card-body">
+                  <div
+                    style="position: absolute; inset: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"
+                    class="chartjs-size-monitor">
+                    <div class="chartjs-size-monitor-expand"
+                      style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+                      <div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div>
+                    </div>
+                    <div class="chartjs-size-monitor-shrink"
+                      style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+                      <div style="position:absolute;width:200%;height:200%;left:0; top:0"></div>
+                    </div>
+                  </div>
+                  <canvas id="spurChartjsBar" style="display: block; height: 182px; width: 364px;" width="728"
+                    height="364" class="chartjs-render-monitor"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card dash-card">
+                <div class="card-header d-flex align-items-center">
+                  <div class="card-icon"><i class="fa fa-bell" aria-hidden="true"></i></div>
+                  <h4 class="card-title">Notification</h4>
+                </div>
+                <div class="card-body">
+                  <div class="notifications">
+                    <a href="#" class="d-flex notification">
+                      <div class="notification-icon">
+                        <i class="fa fa-comment" aria-hidden="true"></i>
+                      </div>
+                      <span>New comment</span>
+                      <span class="notification-time">6 days ago</span>
+                    </a>
+                    <a href="#" class="d-flex notification">
+                      <div class="notification-icon">
+                        <i class="fa fa-comment" aria-hidden="true"></i>
+                      </div>
+                      <span>New comment</span>
+                      <span class="notification-time">6 days ago</span>
+                    </a>
+                    <a href="#" class="d-flex notification">
+                      <div class="notification-icon">
+                        <i class="fa fa-comment" aria-hidden="true"></i>
+                      </div>
+                      <span>New comment</span>
+                      <span class="notification-time">6 days ago</span>
+                    </a>
+                    <a href="#" class="d-flex notification">
+                      <div class="notification-icon">
+                        <i class="fa fa-comment" aria-hidden="true"></i>
+                      </div>
+                      <span>New comment</span>
+                      <span class="notification-time">6 days ago</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

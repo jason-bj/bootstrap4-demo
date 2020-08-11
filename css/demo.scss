@@ -1,0 +1,143 @@
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+.dash {
+  min-height: 100vh;
+}
+
+.nav-bar {
+  a {
+    color: white;
+  }
+  background: #181F2C;
+  //width of nav bar
+  min-width: 238px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  overflow: auto;
+  header {
+    min-height: 84px;
+    padding: 8px 27px;
+    a {
+      margin-right: auto;
+    }
+  }
+}
+
+.nav-item {
+  min-height: 56px;
+  padding: 8px 20px 8px 70px;
+  i {
+    width: 36px;
+    font-size: 19px;
+    margin-left: -40px
+  }
+  &:hover {
+    background: rgba(255, 255, 255, 0.04);
+  }
+}
+
+.nav-body {
+    //nav-bar takes 238px
+    margin-left: 238px;
+}
+
+.toolbar {
+  //header has fixed position
+  background: rgb(243, 243, 243);
+  min-height: 84px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 238px;
+  z-index: 1000;
+}
+.content {
+  //the height of toolbar
+  margin-top: 84px;
+  background-color: #e9edf4;
+  padding: 25px;
+}
+
+.tools {
+  a {
+    color: #515151;
+    display: flex;
+    align-items: center;
+  }
+}
+.tool-item, search-button {
+  width: 42px;
+  height: 42px;
+  i {
+    font-size: 20px;
+  }
+}
+.logo {
+  margin-right: 10px;
+}
+.search-input {
+  &::placeholder {
+    color: #8b8b8b;
+  }
+  margin-right: 15px;
+  margin-left: 15px;
+  border: none;
+  height: 50px;
+  padding: 8px 8px 11px 4px;
+  width: 100px;
+  &:focus {
+    //remove the outline of input when focus
+    outline: none;
+  }
+}
+.search-button {
+  border: none;
+  background: none;
+}
+.stats-card {
+  min-height: 170px;
+  padding: 18px 23px;
+  box-shadow: 0 5px rgba(0, 0, 0, 0.25);
+}
+.stats-number {
+  font-size: 33px;
+}
+.stats-icon {
+  font-size: 20px;
+}
+.dash-row {
+  margin-bottom: 30px;
+}
+.dash-card {
+  max-width: 95%;
+}
+.card-icon {
+  margin-right: 30px;
+}
+.card-header {
+  min-height: 57px;
+  background: #f0f1f7;
+}
+.notification-icon {
+  width: 35px;
+}
+a.notification {
+  color: #515151;
+  &:hover {
+    color:#515151;
+    background-color: #F0F1F7;
+  }
+  padding: 10px 5px;
+}
+.notification-time {
+  margin-left: auto;
+}
+.dash-row {
+  margin-bottom: 30px;
+}
